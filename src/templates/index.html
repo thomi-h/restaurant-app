@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="./manifest.json" />
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <title>Restaurant Apps - PStar7</title>
+  </head>
+  <body>
+    <header>
+      <a class="skip_link" href="#main_content">Skip to Content</a>
+      <nav>
+        <a class="logo" href="/">PStar7</a>
+        <button class="hamburger">
+          <span class="hamburger_line"></span>
+          <span class="hamburger_line"></span>
+          <span class="hamburger_line"></span>
+        </button>
+        <ul class="links">
+          <li><a href="/">Home</a></li>
+          <li><a href="#/like">Favorite</a></li>
+          <li>
+            <a href="https://github.com/thomi-h" target="_blank">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="overlay"></div>
+      <div class="drawer">
+        <ul class="mobile_links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#/like">Favorite</a></li>
+          <li>
+            <a href="https://github.com/thomi-h" target="_blank">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="jumbotron">
+        <img
+          src="./images/heros/hero-image_4.jpg"
+          alt="Premium Cookies with yellow flower and lemon garnish"
+        />
+        <div class="header_content">
+          <h1>Find the Restaurant You Need!</h1>
+        </div>
+      </div>
+    </header>
+    <main id="main_content" tabindex="0">
+      <!--       
+      <div class="card">
+         <img src="./images/heros/hero-image_2" width="400px" alt="">
+        <div class="resto_detail">
+          <div class="rating">4.5</div>
+          <div class="name">Makan Mudah</div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</div>
+        </div>
+        <div class="kota">Bandung</div>
+      </div>
+      <div class="card">
+         <img src="./images/heros/hero-image_2" width="400px" alt="">
+        <div class="resto_detail">
+          <div class="rating">4.5</div>
+          <div class="name">Makan Mudah</div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</div>
+        </div>
+        <div class="kota">Bandung</div>
+      </div>
+      <div class="card">
+         <img src="./images/heros/hero-image_2" width="400px" alt="">
+        <div class="resto_detail">
+          <div class="rating">4.5</div>
+          <div class="name">Makan Mudah</div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</div>
+        </div>
+        <div class="kota">Bandung</div>
+      </div>
+      <div class="card">
+         <img src="./images/heros/hero-image_2" width="400px" alt="">
+        <div class="resto_detail">
+          <div class="rating">4.5</div>
+          <div class="name">Makan Mudah</div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</div>
+        </div>
+        <div class="kota">Bandung</div>
+      </div> 
+       -->
+    </main>
+    <footer>Copyright © 2024 - PStar7</footer>
+  </body>
+</html>
