@@ -70,16 +70,27 @@ describe("Searching restaurants", () => {
     expect(document.querySelectorAll(".restaurant").length).toEqual(2);
   });
 
-  it("should show the name of the found restaurant", () => {
+  fit("should show the title of the found restaurants", () => {
+    presenter._showFoundRestaurants([{ id: 1, name: "Satu" }]);
+
+    expect(
+      document.querySelectorAll(".restaurant__name").item(0).textContent
+    ).toEqual("Satu");
+
     presenter._showFoundRestaurants([
       {
         id: 1,
         name: "Satu",
       },
+      {
+        id: 2,
+        name: "Dua",
+      },
     ]);
-  });
 
-  expect(document.querySelectorAll(".restaurant__name")[0].textContent).toEqual(
-    "Satu"
-  );
+    const restaurantName = document.querySelectorAll(".restaurant__name");
+
+    expect(restaurantName.item(0).textContent).toEqual("Satu");
+    expect(restaurantName.item(1).textContent).toEqual("Dua");
+  });
 });

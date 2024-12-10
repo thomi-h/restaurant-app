@@ -26,6 +26,7 @@ class FavoriteRestaurantSearchPresenter {
         </li>`),
       ""
     );
+
     document.querySelector(".restaurants").innerHTML = html;
   }
 
