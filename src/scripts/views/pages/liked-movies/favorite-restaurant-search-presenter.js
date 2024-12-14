@@ -22,7 +22,7 @@ class FavoriteRestaurantSearchPresenter {
       (carry, restaurant) =>
         carry.concat(`
         <li class="restaurant">
-          <span class="restaurant__name">${restaurant.name}</span>
+          <span class="restaurant__name">${restaurant.name || "-"}</span>
         </li>`),
       ""
     );

@@ -6,7 +6,7 @@ const createRestaurantItemTemplate = (restaurant) => `
                   restaurant.pictureId
                     ? CONFIG.BASE_IMG_URL + restaurant.pictureId
                     : ""
-                }" width="400px" alt="${restaurant.name}">
+                }" width="400px" alt="${restaurant.name}" class="lazyload">
                 <div class="resto_detail">
                     <div class="rating">${restaurant.rating}</div>
                     <h3 class="name"><a href="/#/detail/${restaurant.id}">${
@@ -44,7 +44,7 @@ const createRestaurantDetailTemplate = (restaurant) => {
                     restaurant.pictureId
                       ? CONFIG.BASE_IMG_URL + restaurant.pictureId
                       : ""
-                  }" width="400px" alt="${restaurant.name}">
+                  }" width="400px" alt="${restaurant.name}" class="lazyload">
                   <div class="resto_detail">
                       <div class="rating">${restaurant.rating}</div>
                       <div class="name">${restaurant.name}</div>

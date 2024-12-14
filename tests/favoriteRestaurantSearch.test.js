@@ -93,4 +93,12 @@ describe("Searching restaurants", () => {
     expect(restaurantName.item(0).textContent).toEqual("Satu");
     expect(restaurantName.item(1).textContent).toEqual("Dua");
   });
+
+  it("should show - for found movie without title,", () => {
+    presenter._showFoundRestaurants([{ id: 1 }]);
+
+    expect(
+      document.querySelectorAll(".restaurant__name").item(0).textContent
+    ).toEqual("-");
+  });
 });
